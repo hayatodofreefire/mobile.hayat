@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+const nome = 'Hayat Rossi Azam';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>hayat</Text>
+      <Text>{nome}</Text>
     </View>
   );
 }
