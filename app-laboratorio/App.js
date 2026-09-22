@@ -12,6 +12,14 @@ function calcularMedia(pessoa) {
   return (pessoa.nota1 + pessoa.nota2) / 2;
 }
 
+function verificarSituacao(media) {
+  if (media >= 6) {
+    return 'Aprovado';
+  } else {
+    return 'Em recuperacao';
+  }
+}
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -19,6 +27,7 @@ export default function App() {
       <Text>{eu.idade}</Text>
       <Text>{eu.cidade}</Text>
       <Text>{calcularMedia(eu)}</Text>
+      <Text>{verificarSituacao(calcularMedia(eu))}</Text>
     </View>
   );
 }
@@ -26,7 +35,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#4592eb',
+    backgroundColor: '#5f1cca',
     alignItems: 'center',
     justifyContent: 'center',
   },
