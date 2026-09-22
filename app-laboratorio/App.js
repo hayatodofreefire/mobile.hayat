@@ -23,7 +23,7 @@ function verificarSituacao(media) {
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{eu.nome}</Text>
+      <Text>{eu.nome}
       <Text>{eu.idade}</Text>
       <Text>{eu.cidade}</Text>
       <Text>{calcularMedia(eu)}</Text>
